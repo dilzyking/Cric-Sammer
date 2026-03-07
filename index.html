@@ -21,6 +21,17 @@ body{
     flex-direction:column;
     gap:15px;
 }
+    .primary{
+background:#0d6efd;
+color:#fff;
+border:none;
+}
+
+.secondary{
+background:#f1f1f1;
+color:#000;
+border:none;
+}
 .card{
     background:linear-gradient(135deg,#0d6efd,#0a58ca);
     border-radius:14px;
@@ -178,10 +189,6 @@ Telegram
 /* POPUP */
 const popup=document.getElementById("popup");
 function closePopup(){
-  popup.style.display="none";
-  sessionStorage.setItem("joined","yes");
-}
-if(sessionStorage.getItem("joined")==="yes"){
   popup.style.display="none";
 }
 document.addEventListener("DOMContentLoaded",function(){
